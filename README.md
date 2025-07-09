@@ -13,3 +13,8 @@ This is a command-line banking system for COMP6441 that supports secure user reg
 - Secure password hashing with bcrypt
 - Simple menu-driven CLI
 - File-based user and transaction storage
+
+### Completed Milestones:
+- Phase 1: Planning and Setup
+- Phase 2: Environment & GitHub Configuration
+- Phase 3: Core Banking Features (Login, Deposit, Withdraw, Balance)

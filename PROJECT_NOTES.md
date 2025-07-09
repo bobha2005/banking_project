@@ -10,20 +10,20 @@ This document tracks internal planning and progress across the project phases.
 (Describe what the project aims to do — secure CLI banking system.)
 
 ### ✅ Core Features
-- [ ] Register
-- [ ] Login
-- [ ] View Balance
-- [ ] Deposit
-- [ ] Withdraw
+- ✅ Register
+- ✅ Login
+- ✅ View Balance
+- ✅ Deposit
+- ✅ Withdraw
+- ✅ Transaction Logging
 - [ ] Transfer
-- [ ] Transaction Logging
 
 ### 🔐 Security Considerations
-- [ ] Use bcrypt for password hashing
-- [ ] Avoid storing plaintext passwords
-- [ ] Ensure transaction integrity
-- [ ] Basic input validation
-- [ ] Local file-based storage
+- ✅ Use bcrypt for password hashing
+- ✅ Avoid storing plaintext passwords
+- ✅ Ensure transaction integrity
+- ✅ Basic input validation
+- ✅ Local file-based storage
 
 ### 📦 Tools & Stack
 - Language: Python 3
@@ -39,12 +39,31 @@ This document tracks internal planning and progress across the project phases.
 ---
 
 ## 📐 Phase 2: Design & Planning (Week 2–3)
-(TBD)
+### 🧩 Project Structure
+- main.py: handles CLI interface + routing
+- auth.py: handles registration + login logic
+- banking.py: handles deposit, withdraw, balance
+- transactions.json: persistent store for financial activity
+- users.json: persistent user store
+
+### 🧪 Testing Strategy
+- Manual testing via CLI (Python run + input)
+- JSON inspection + debugging via print()
+- Planned: small test.py module to isolate logic
 
 ---
 
 ## 🔧 Phase 3: Prototyping (Week 3–4)
-(TBD)
+### ✅ Implemented:
+- CLI Menu Flow
+- Secure Registration/Login with bcrypt
+- Deposit with timestamped logging
+- Withdraw with balance check
+- View Balance
+
+### 📁 Notes:
+- Users file is validated for missing/corrupt states
+- Edge cases like negative input, malformed files are handled
 
 ---
 
