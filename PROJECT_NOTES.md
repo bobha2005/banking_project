@@ -68,7 +68,29 @@ This document tracks internal planning and progress across the project phases.
 ---
 
 ## 🛠️ Phase 4: Build & Improve (Week 5–7)
-(TBD)
+### ✅ What Was Implemented
+
+- Core banking features: deposit, withdraw, transfer, balance check
+- Transaction logging to JSON file
+- Balance calculated from transaction history
+- Input validation (e.g., positive amounts, username checks)
+- Default balance starts at $0 for new users
+- bcrypt for password hashing (security best practice)
+- Clear CLI interface with menu options
+- Graceful error handling (e.g., empty or missing files)
+
+### 📁 Project Structure
+- `auth.py`: handles registration/login
+- `banking.py`: contains all banking operations
+- `main.py`: application entry point
+- `users.json`, `transactions.json`: file-based local storage
+- `project_notes.md`: internal planning document
+- `README.md`: public-facing project overview
+
+### 🔍 Testing & Validation
+- Manual CLI tests for each core operation
+- Edge cases: new accounts, no transactions, wrong usernames/passwords
+- JSON data correctly updated across all operations
 
 ---
 

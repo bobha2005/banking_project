@@ -6,6 +6,7 @@ import os
 
 USERS_FILE = "users.json"
 
+# Function to load users from a file
 def load_users():
     if not os.path.exists(USERS_FILE):
         return {}
@@ -15,15 +16,21 @@ def load_users():
     except json.JSONDecodeError:
         return {}
 
-    
+# Function to save users to a file    
 def save_users(users):
     with open(USERS_FILE, "w") as f:
         json.dump(users, f, indent=2)
 
+# Function to register a new user
 def register():
     users = load_users()
 
     username = input("Enter username: ").strip()
+
+    if not username:
+        print("Username cannot be empty.")
+        return
+
     if username in users:
         print("Username already exists.")
         return
@@ -40,7 +47,8 @@ def register():
 
     save_users(users)
     print("User registered successfully.")
-    
+
+# Function to login a user 
 def login():
     users = load_users()
 

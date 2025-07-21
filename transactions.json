@@ -1,0 +1,34 @@
+[
+  {
+    "username": "Minh",
+    "type": "deposit",
+    "amount": 10.0,
+    "timestamp": "2025-07-16 19:05:26"
+  },
+  {
+    "username": "Minh",
+    "type": "withdraw",
+    "amount": 10.0,
+    "timestamp": "2025-07-16 19:05:33"
+  },
+  {
+    "username": "Minh",
+    "type": "deposit",
+    "amount": 100.0,
+    "timestamp": "2025-07-16 19:05:55"
+  },
+  {
+    "username": "Minh",
+    "type": "transfer",
+    "amount": -100.0,
+    "to": "Duyanh05",
+    "timestamp": "2025-07-16 19:08:57"
+  },
+  {
+    "username": "Duyanh05",
+    "type": "transfer",
+    "amount": 100.0,
+    "from": "Minh",
+    "timestamp": "2025-07-16 19:08:57"
+  }
+]

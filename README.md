@@ -1,20 +1,65 @@
-# banking_project
+# 💰 banking_project
 
-This is a command-line banking system for COMP6441 that supports secure user registration, login, and transactions using bcrypt.
+This is a secure command-line banking system built for COMP6441. It supports encrypted user registration, login, transactions, and account balance tracking — all through a lightweight Python CLI.
 
-## Setup
+---
+
+## 🚀 Setup
+
 1. Clone the repository
-2. Create virtual environment: `python3 -m venv venv`
-3. Activate: `source venv/bin/activate`
-4. Install requirements: `pip install -r requirements.txt`
-5. Run: `python src/main.py`
+2. Create virtual environment:  
+   `python3 -m venv venv`
+3. Activate environment:  
+   `source venv/bin/activate`
+4. Install dependencies:  
+   `pip install -r requirements.txt`
+5. Run the program:  
+   `python src/main.py`
 
-## Features
-- Secure password hashing with bcrypt
-- Simple menu-driven CLI
-- File-based user and transaction storage
+---
 
-### Completed Milestones:
-- Phase 1: Planning and Setup
-- Phase 2: Environment & GitHub Configuration
-- Phase 3: Core Banking Features (Login, Deposit, Withdraw, Balance)
+## ✅ Features
+
+- 🔐 Secure password hashing (bcrypt)
+- 🧾 Deposit, Withdraw, and Transfer funds
+- 📊 View balance (real-time from transaction history)
+- 📂 JSON file storage for users and transactions
+- 💡 Handles edge cases (e.g., new users, empty logs)
+- 🧱 Modular codebase (auth.py, banking.py, main.py)
+
+---
+
+## 📌 Project Milestones
+
+- ✅ Phase 1: Research & Requirements
+- ✅ Phase 2: Design & Planning
+- ✅ Phase 3: Prototyping Core Logic
+- ✅ Phase 4: Full Feature Implementation & Error Handling
+- 🔜 Phase 5: Final Report & Reflection
+
+---
+
+## 📁 Project Structure
+
+banking_project/
+├── src/
+│ ├── auth.py # Registration/Login logic
+│ ├── banking.py # Deposit, withdraw, balance, transfer
+│ ├── main.py # App entrypoint
+│
+├── data/
+│ ├── users.json # Stores user credentials
+│ ├── transactions.json # Stores transaction logs
+│
+├── project_notes.md # Internal development journal
+├── README.md # Project overview
+├── requirements.txt # Python dependencies
+
+
+---
+
+## 🛡️ Security Considerations
+
+- Passwords are never stored in plaintext.
+- bcrypt hashing makes user data resistant to brute-force attacks.
+- Input validation ensures transaction and access reliability.
