@@ -42,17 +42,29 @@ This is a secure command-line banking system built for COMP6441. It supports enc
 ## 📁 Project Structure
 
 banking_project/
+
 ├── src/
+
 │ ├── auth.py # Registration/Login logic
+
 │ ├── banking.py # Deposit, withdraw, balance, transfer
+
 │ ├── main.py # App entrypoint
+
 │
+
 ├── data/
+
 │ ├── users.json # Stores user credentials
+
 │ ├── transactions.json # Stores transaction logs
+
 │
+
 ├── project_notes.md # Internal development journal
+
 ├── README.md # Project overview
+
 ├── requirements.txt # Python dependencies
 
 
