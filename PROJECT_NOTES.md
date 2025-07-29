@@ -95,4 +95,10 @@ This document tracks internal planning and progress across the project phases.
 ---
 
 ## 📋 Phase 5: Final Report & Reflection (Week 8)
-(TBD)
+In this final phase, I consolidated all project work and completed a written report and video demonstration. I reflected on the design decisions, implementation challenges, and lessons learned throughout the project. The report outlines the overall structure of the application, key security measures, testing strategies, and areas for potential future improvement.
+
+Deliverables:
+- Final system implementation (CLI banking system)
+- 3–4 minute demonstration video
+- Written report covering all phases, security considerations, and reflection
+

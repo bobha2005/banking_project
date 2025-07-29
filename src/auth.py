@@ -3,6 +3,7 @@
 import bcrypt
 import json
 import os 
+from getpass import getpass
 
 USERS_FILE = "users.json"
 
@@ -35,8 +36,12 @@ def register():
         print("Username already exists.")
         return
     
-    password = input("Enter password: ").strip()
-    confrim_password = input("Confirm password: ").strip()
+    password = getpass("Enter password: ")
+    if not password:
+        print("Password cannot be empty.")
+        return
+
+    confrim_password = getpass("Confirm password: ")
 
     if password != confrim_password:
         print("Passwords do not match.")
@@ -57,7 +62,7 @@ def login():
         print("Username not found.")
         return None
     
-    password = input("Enter your password: ").strip()
+    password = getpass("Enter password: ")
     hashed_pw = users[username].encode()
 
     if bcrypt.checkpw(password.encode(), hashed_pw):

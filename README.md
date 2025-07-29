@@ -35,7 +35,7 @@ This is a secure command-line banking system built for COMP6441. It supports enc
 - ✅ Phase 2: Design & Planning
 - ✅ Phase 3: Prototyping Core Logic
 - ✅ Phase 4: Full Feature Implementation & Error Handling
-- 🔜 Phase 5: Final Report & Reflection
+- ✅ Phase 5: Final Report & Reflection
 
 ---
 

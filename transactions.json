@@ -1,34 +1,28 @@
 [
   {
-    "username": "Minh",
+    "username": "Anh",
     "type": "deposit",
-    "amount": 10.0,
-    "timestamp": "2025-07-16 19:05:26"
+    "amount": 100.0,
+    "timestamp": "2025-07-25 14:41:34"
   },
   {
-    "username": "Minh",
+    "username": "Anh",
     "type": "withdraw",
-    "amount": 10.0,
-    "timestamp": "2025-07-16 19:05:33"
+    "amount": 20.0,
+    "timestamp": "2025-07-25 14:41:48"
   },
   {
-    "username": "Minh",
-    "type": "deposit",
-    "amount": 100.0,
-    "timestamp": "2025-07-16 19:05:55"
-  },
-  {
-    "username": "Minh",
+    "username": "Anh",
     "type": "transfer",
-    "amount": -100.0,
-    "to": "Duyanh05",
-    "timestamp": "2025-07-16 19:08:57"
+    "amount": -50.0,
+    "to": "Bob",
+    "timestamp": "2025-07-25 14:42:52"
   },
   {
-    "username": "Duyanh05",
+    "username": "Bob",
     "type": "transfer",
-    "amount": 100.0,
-    "from": "Minh",
-    "timestamp": "2025-07-16 19:08:57"
+    "amount": 50.0,
+    "from": "Anh",
+    "timestamp": "2025-07-25 14:42:52"
   }
 ]

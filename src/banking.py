@@ -167,4 +167,6 @@ def current_balance(transactions, username):
                 balance += transaction["amount"]
             elif transaction["type"] == "withdraw":
                 balance -= transaction["amount"]
+            elif transaction["type"] == "transfer":
+                balance += transaction["amount"]
     return balance
