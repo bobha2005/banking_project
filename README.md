@@ -37,6 +37,9 @@ This is a secure command-line banking system built for COMP6441. It supports enc
 - ✅ Phase 4: Full Feature Implementation & Error Handling
 - ✅ Phase 5: Final Report & Reflection
 
+## 💡 Additional Phase
+- ✅ Phase 6: Refactor, Implement Flask and React.js
+
 ---
 
 ## 🛡️ Security Considerations

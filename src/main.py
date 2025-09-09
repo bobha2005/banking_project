@@ -1,8 +1,8 @@
 # This is the entry point for CLI application.
 # manages user interface and routing logic.
 
-from auth import login, register
-from banking import banking_menu
+from backend.auth import login, register
+from backend.banking import banking_menu
 
 def main():
     while True:
