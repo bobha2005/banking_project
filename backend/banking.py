@@ -87,7 +87,7 @@ def transfer(sender, receiver, amount):
     
     sender_balance = users[sender]["balance"]
     if amount > sender_balance:
-        return False, f"Insufficient funds. Your current balance is ${balance:.2f}"
+        return False, f"Insufficient funds. Your current balance is ${sender_balance:.2f}"
     
     users[sender]["balance"] -= amount
     users[receiver]["balance"] += amount

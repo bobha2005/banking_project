@@ -1,5 +1,6 @@
 {
-    "username": "anh",
-    "password": "example_password", 
+  "Bob": {
+    "password": "$2b$12$fhejUptcrYALck0w9jWvDePuxwHC7Oyn4oilAoOmvXiGraM6s3ZuC",
     "balance": 0.0
+  }
 }

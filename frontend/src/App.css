@@ -1,38 +1,468 @@
+/* Banking App Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  color: #333;
+}
+
 .App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.app-header {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.app-header h1 {
+  color: #4a5568;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.1rem;
+  color: #2d3748;
+}
+
+/* Messages */
+.message {
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  animation: slideIn 0.3s ease-out;
+}
+
+.message.success {
+  background: #c6f6d5;
+  color: #22543d;
+  border-left: 4px solid #38a169;
+}
+
+.message.error {
+  background: #fed7d7;
+  color: #742a2a;
+  border-left: 4px solid #e53e3e;
+}
+
+.message.info {
+  background: #bee3f8;
+  color: #2a4365;
+  border-left: 4px solid #3182ce;
+}
+
+/* Authentication Section */
+.auth-section {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.auth-form h2 {
+  text-align: center;
+  color: #4a5568;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.auth-form input {
+  padding: 15px 20px;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.auth-form input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Tab System */
+.tab-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.tab-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.3);
+  color: #4a5568;
+}
+
+.tab-btn.active {
+  background: #667eea;
+  color: white;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.tab-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.btn-primary {
+  background: #667eea;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-secondary {
+  background: #a0aec0;
+  color: white;
 }
 
-@keyframes App-logo-spin {
+.btn-success {
+  background: #48bb78;
+  color: white;
+}
+
+.btn-warning {
+  background: #ed8936;
+  color: white;
+}
+
+.btn-info {
+  background: #4299e1;
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Dashboard */
+.dashboard {
+  display: grid;
+  gap: 30px;
+}
+
+.balance-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.balance-card h2 {
+  color: #4a5568;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.balance-amount {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #48bb78;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Operations Section */
+.operations-section {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Transaction Forms */
+.transaction-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.transaction-form h3 {
+  text-align: center;
+  color: #4a5568;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.transaction-form input {
+  padding: 15px 20px;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.transaction-form input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Transaction History */
+.transaction-history {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.transaction-history h3 {
+  text-align: center;
+  color: #4a5568;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.transactions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.transaction-item {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  padding: 20px;
+  border-left: 5px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.transaction-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-item.deposit {
+  border-left-color: #48bb78;
+}
+
+.transaction-item.withdraw {
+  border-left-color: #ed8936;
+}
+
+.transaction-item.transfer {
+  border-left-color: #4299e1;
+}
+
+.transaction-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.transaction-amount {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.transaction-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #718096;
+}
+
+.timestamp {
+  font-style: italic;
+}
+
+/* Animations */
+@keyframes slideIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(-20px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .App {
+    padding: 10px;
+  }
+  
+  .app-header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .app-header h1 {
+    font-size: 2rem;
+  }
+  
+  .auth-section,
+  .operations-section,
+  .balance-card {
+    padding: 20px;
+    margin: 0 10px;
+  }
+  
+  .balance-amount {
+    font-size: 2.5rem;
+  }
+  
+  .tab-buttons {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .tab-btn {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+  
+  .transaction-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  
+  .transaction-details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .balance-amount {
+    font-size: 2rem;
+  }
+  
+  .auth-form,
+  .transaction-form {
+    max-width: 100%;
+  }
+  
+  .tab-buttons {
+    flex-direction: column;
+  }
+  
+  .tab-btn {
+    width: 100%;
+  }
+}
+
+/* Loading states */
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Form validation styles */
+.form-error {
+  border-color: #e53e3e !important;
+  box-shadow: 0 0 0 3px rgba(229, 62, 62, 0.1) !important;
+}
+
+.form-success {
+  border-color: #38a169 !important;
+  box-shadow: 0 0 0 3px rgba(56, 161, 105, 0.1) !important;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.text-success {
+  color: #48bb78;
+}
+
+.text-error {
+  color: #e53e3e;
+}
+
+.text-warning {
+  color: #ed8936;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
