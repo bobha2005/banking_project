@@ -177,11 +177,10 @@ function App() {
   return (
     <div className="App">
       <header className="app-header">
-        <h1>🏦 Secure Banking System</h1>
+        <h1>SECURE BANKING SYSTEM</h1>
         {currentUser && (
           <div className="user-info">
             <span>Welcome, {currentUser}!</span>
-            <button onClick={handleLogout} className="btn btn-secondary">Logout</button>
           </div>
         )}
       </header>
@@ -391,6 +390,14 @@ function App() {
           </div>
         </div>
       )}
+      {/* Logout Button Pinned to Bottom */}
+        {currentUser && (
+          <div className="logout-container">
+            <button onClick={handleLogout} className="btn-logout">
+              Logout
+            </button>
+          </div>
+        )}
     </div>
   );
 }
