@@ -1,49 +1,52 @@
-# 💰 banking_project
+🏦 DABank - Secure Banking System
+A modern, full-stack banking application featuring a React frontend and a Python Flask backend. DABank offers a "Fintech-style" elegant interface with real-time balance updates and transaction tracking.
 
-This is a secure command-line banking system built for COMP6441. It supports encrypted user registration, login, transactions, and account balance tracking — all through a lightweight Python CLI.
+✨ New Features
+Glassmorphism UI: A premium, semi-transparent interface with blurred background effects for a modern look.
 
----
+Staggered History Animations: Transaction history items now "waterfall" into view with smooth CSS entrance animations.
 
-## 🚀 Setup
+Smart Navigation: Perfectly centered operation buttons and a pinned floating Logout button for better accessibility.
 
-1. Clone the repository
-2. Create virtual environment:  
-   `python3 -m venv venv`
-3. Activate environment:  
-   `source venv/bin/activate`
-4. Install dependencies:  
-   `pip install -r requirements.txt`
-5. Run the program:  
-   `python src/main.py`
+Smooth Scroll Engine: Native smooth scrolling implemented for seamless navigation between the dashboard and transaction history.
 
----
+🚀 Local Setup Guide
+1. Backend (Python Flask)
+Navigate to the backend folder: cd backend
 
-## ✅ Features
+Create and activate a virtual environment: python3 -m venv venv source venv/bin/activate
 
-- 🔐 Secure password hashing (bcrypt)
-- 🧾 Deposit, Withdraw, and Transfer funds
-- 📊 View balance (real-time from transaction history)
-- 📂 JSON file storage for users and transactions
-- 💡 Handles edge cases (e.g., new users, empty logs)
-- 🧱 Modular codebase (auth.py, banking.py, main.py)
+Install dependencies: pip install flask flask-cors
 
----
+Run the server: python server.py The server will run on http://localhost:5001
 
-## 📌 Project Milestones
+2. Frontend (React)
+Navigate to the frontend folder: cd frontend
 
-- ✅ Phase 1: Research & Requirements
-- ✅ Phase 2: Design & Planning
-- ✅ Phase 3: Prototyping Core Logic
-- ✅ Phase 4: Full Feature Implementation & Error Handling
-- ✅ Phase 5: Final Report & Reflection
+Install packages: npm install
 
-## 💡 Additional Phase
-- ✅ Phase 6: Refactor, Implement Flask and React.js
+Start the app: npm start The app will open on http://localhost:3000 (or 3002)
 
----
+🌐 Deployment Instructions
+Backend (Render/Railway)
+Ensure you have a requirements.txt file (Generate via pip freeze > requirements.txt).
 
-## 🛡️ Security Considerations
+Update server.py to use os.environ.get("PORT") for the port setting.
 
-- Passwords are never stored in plaintext.
-- bcrypt hashing makes user data resistant to brute-force attacks.
-- Input validation ensures transaction and access reliability.
+Connect your GitHub repository to Render and set the start command to python backend/server.py.
+
+Frontend (Vercel/Netlify)
+In App.js, update the API_BASE variable from localhost:5001 to your live Backend URL.
+
+Connect your repository to Vercel.
+
+Update your Backend CORS settings to allow requests from your new Vercel domain.
+
+🛠 Tech Stack
+Frontend: React.js, CSS3 (Flexbox & Animations)
+
+Backend: Python 3, Flask, Flask-CORS
+
+Database: Local JSON (or current banking logic)
+
+Typography: Montserrat & Inter

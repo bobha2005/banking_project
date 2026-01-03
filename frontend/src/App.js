@@ -22,7 +22,7 @@ function App() {
     recipient: '' 
   });
 
-  const API_BASE = 'http://localhost:5001';
+  const API_BASE = 'https://dabank.onrender.com';
 
   // Show message helper
   const showMessage = (msg, type = 'info') => {
