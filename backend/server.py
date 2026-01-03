@@ -5,7 +5,7 @@ from banking import deposit, withdraw, get_balance, transfer, get_transaction_hi
 from auth import register, login
 
 app = Flask(__name__)
-CORS(app) # Enable CORS for React frontend
+CORS(app, origins=["https://bobha2005.github.io"]) # Enable CORS for React frontend
 
 # Register a new user
 @app.route('/register', methods=['POST'])
