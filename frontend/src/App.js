@@ -22,7 +22,7 @@ function App() {
     recipient: '' 
   });
 
-  const API_BASE = 'https://dabank.onrender.com';
+  const API_BASE = 'https://banking-project-8017.onrender.com';
 
   // Show message helper
   const showMessage = (msg, type = 'info') => {
