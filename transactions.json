@@ -1,0 +1,48 @@
+[
+  {
+    "username": "Minh",
+    "type": "deposit",
+    "amount": 100.0,
+    "timestamp": "2026-01-03 23:10:24"
+  },
+  {
+    "username": "Minh",
+    "type": "withdraw",
+    "amount": 50.0,
+    "timestamp": "2026-01-03 23:10:30"
+  },
+  {
+    "username": "Anh",
+    "type": "deposit",
+    "amount": 100.0,
+    "timestamp": "2026-01-03 23:32:18"
+  },
+  {
+    "username": "Anh",
+    "type": "transfer",
+    "amount": -50.0,
+    "to": "Minh",
+    "timestamp": "2026-01-03 23:32:29"
+  },
+  {
+    "username": "Minh",
+    "type": "transfer",
+    "amount": 50.0,
+    "from": "Anh",
+    "timestamp": "2026-01-03 23:32:29"
+  },
+  {
+    "username": "Anh",
+    "type": "transfer",
+    "amount": -20.0,
+    "to": "Minh",
+    "timestamp": "2026-01-03 23:32:47"
+  },
+  {
+    "username": "Minh",
+    "type": "transfer",
+    "amount": 20.0,
+    "from": "Anh",
+    "timestamp": "2026-01-03 23:32:47"
+  }
+]

@@ -46,6 +46,7 @@ body::before {
   padding: 20px;
   position: relative; /* Keeps it above the body::before layer */
   z-index: 1;
+  padding-bottom: 150px;
 }
 
 /* Header */
@@ -212,7 +213,7 @@ body::before {
 .btn {
   padding: 12px 24px;
   border: none;
-  border-radius: 10px;
+  border-radius: 20px;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
@@ -286,7 +287,7 @@ body::before {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
   border-radius: 30px; /* Rounder corners look more professional */
-  padding: 0px;       /* Increased padding for better spacing */
+  padding: 40px;       /* Increased padding for better spacing */
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
@@ -295,7 +296,7 @@ body::before {
   display: flex;            /* Enables Flexbox */
   justify-content: center;   /* Centers buttons horizontally */
   gap: 10px;                /* Adds even space between them */
-  padding: 10px 0;          /* Adds some breathing room */
+  padding: 5px 20px;          /* Adds some breathing room */
   width: 100%;
   margin-top: 30px;
 }
@@ -355,9 +356,28 @@ body::before {
 }
 
 .transactions-list {
+  max-height: 150px;         /* Smaller height to force scrolling sooner */
+  overflow-y: auto;          /* Enables the scrollbar when needed */
+  padding: 10px;
   display: flex;
   flex-direction: column;
   gap: 15px;
+  scroll-behavior: smooth;   /* Native smooth scroll */
+}
+
+/* Custom "Fintech" Scrollbar Styling */
+.transactions-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.transactions-list::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.transactions-list::-webkit-scrollbar-thumb {
+  background: #667eea;       /* Matches your primary blue theme */
+  border-radius: 10px;
 }
 
 .transaction-item {

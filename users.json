@@ -1,6 +1,10 @@
 {
   "Minh": {
     "password": "$2b$12$CtjvL.oSjjjUVJ41HrsC9.VfsUu4H3cM3CFJEqwK4TH6O/sZkd4qW",
-    "balance": 0.0
+    "balance": 120.0
+  },
+  "Anh": {
+    "password": "$2b$12$nBr4p4VCgyZnklAq0gNtrOZH20VcY2sWL9MtfParOrbScSFoK2vJG",
+    "balance": 30.0
   }
 }
