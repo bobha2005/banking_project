@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/banking_project/static/css/main.36152d7d.css",
+    "main.js": "/banking_project/static/js/main.eec15699.js",
+    "static/js/453.670e15c7.chunk.js": "/banking_project/static/js/453.670e15c7.chunk.js",
+    "static/media/sydneyImage.webp": "/banking_project/static/media/sydneyImage.5ab80221584a64e80a48.webp",
+    "index.html": "/banking_project/index.html",
+    "main.36152d7d.css.map": "/banking_project/static/css/main.36152d7d.css.map",
+    "main.eec15699.js.map": "/banking_project/static/js/main.eec15699.js.map",
+    "453.670e15c7.chunk.js.map": "/banking_project/static/js/453.670e15c7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.36152d7d.css",
+    "static/js/main.eec15699.js"
+  ]
+}
