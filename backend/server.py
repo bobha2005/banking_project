@@ -1,4 +1,5 @@
 from flask import Flask, jsonify, request
+import os
 from flask_cors import CORS
 from banking import deposit, withdraw, get_balance, transfer, get_transaction_history
 from auth import register, login
