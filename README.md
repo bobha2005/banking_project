@@ -1,7 +1,7 @@
-🏦 DABank - Secure Banking System
+# 🏦 DABank - Secure Banking System
 A modern, full-stack banking application featuring a React frontend and a Python Flask backend. DABank offers a "Fintech-style" elegant interface with real-time balance updates and transaction tracking.
 
-✨ New Features
+## ✨ New Features
 Glassmorphism UI: A premium, semi-transparent interface with blurred background effects for a modern look.
 
 Staggered History Animations: Transaction history items now "waterfall" into view with smooth CSS entrance animations.
@@ -10,7 +10,7 @@ Smart Navigation: Perfectly centered operation buttons and a pinned floating Log
 
 Smooth Scroll Engine: Native smooth scrolling implemented for seamless navigation between the dashboard and transaction history.
 
-🚀 Local Setup Guide
+## 🚀 Local Setup Guide
 1. Backend (Python Flask)
 Navigate to the backend folder: cd backend
 
@@ -27,7 +27,7 @@ Install packages: npm install
 
 Start the app: npm start The app will open on http://localhost:3000 (or 3002)
 
-🌐 Deployment Instructions
+## 🌐 Deployment Instructions
 Backend (Render/Railway)
 Ensure you have a requirements.txt file (Generate via pip freeze > requirements.txt).
 
@@ -42,7 +42,7 @@ Connect your repository to Vercel.
 
 Update your Backend CORS settings to allow requests from your new Vercel domain.
 
-🛠 Tech Stack
+## 🛠 Tech Stack
 Frontend: React.js, CSS3 (Flexbox & Animations)
 
 Backend: Python 3, Flask, Flask-CORS
